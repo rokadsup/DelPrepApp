@@ -1,16 +1,19 @@
 {
   "name": "app1",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "license": "MIT",
   "main": "server.js",
   "scripts": {
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build",
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build --aot=false -prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "homepage" : "https://github.com/rokadsup/DelPrepApp",
   "private": true,
   "dependencies": {
     "@angular/animations": "^5.2.0",
